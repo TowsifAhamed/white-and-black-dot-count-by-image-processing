@@ -1,5 +1,5 @@
 import cv2
-path="C:/Users/Personal/Downloads/h084g.jpg"
+path="black dot.jpg"
 gray = cv2.imread(path, 0)
 
 ## threshold
