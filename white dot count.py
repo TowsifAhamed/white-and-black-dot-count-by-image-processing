@@ -1,9 +1,9 @@
 import cv2
-path="white dot.jpg"
+path="white dot.png"
 gray = cv2.imread(path, 0)
 
 ## threshold
-th, threshed = cv2.threshold(gray, 100, 255,cv2.THRESH_BINARY_INV|cv2.THRESH_OTSU)
+th, threshed = cv2.threshold(gray, 100, 255,cv2.THRESH_BINARY|cv2.THRESH_OTSU)
 
 ## findcontours
 cnts = cv2.findContours(threshed, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)[-2]
